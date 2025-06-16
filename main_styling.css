@@ -1,0 +1,55 @@
+* { 
+    font-family: "Comic Sans MS", "Comic Sans", "cursive";
+    border: 1px solid red; 
+}
+
+.Calculator.Frame { 
+    background-color: silver;
+    height: 90vh; width: 50vw; border-radius: 25%; 
+}
+
+.Buttons_Parent {
+    display: flex; flex: 1 1 auto; 
+}
+
+.Calculator.Display { 
+    background-color: palegreen; position: absolute;
+    width: 35vw; height: 10vh; border-radius: 20px; margin-top: 7vh; margin-left: 5vw;
+}
+
+.Buttons.Blue {
+    background-color: cornflowerblue;
+    border-radius: 25%; margin-top: 20vh;
+    justify-content: center; align-items: center;
+
+}
+
+.Buttons.Black.Parent {
+    background-color: transparent;    
+}
+
+.Buttons.Black { 
+    background-color: black; color: white; padding: 2.5%; 
+    gap: 1%; border-radius: 25%; 
+}
+
+.Buttons.White.Parent { 
+  
+    background-color: transparent; 
+
+}
+
+.Buttons.White { 
+  background-color: white; color: black;
+   padding: 2.5%; 
+  gap: 1%; border-radius: 25%; 
+}
+
+.Buttons.Orange.Parent {
+    background-color: transparent;
+}
+
+.Buttons.Orange {
+  background-color: orange; color: black; 
+  gap: 1%; border-radius: 25%; padding: 2%;
+}
