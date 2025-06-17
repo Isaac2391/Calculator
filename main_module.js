@@ -1,20 +1,47 @@
 let operand1 = 0
 let operand2 = 0
-let operator = " "
+let operator = null
+let checker = undefined
+let display = " "
+let running = false 
 
 const calcDisplay = document.querySelector(".Calculator.Display")
+const onButton = document.getElementById("On_Button")
 
-calcDisplay.addEventListener("", () => { })
+equalOperator.addEventListener("click", () => {});
 
-function operate(operand1,operand2,operator) {
-    return operator(operand1,operand2);
+function Turn_On() { 
+
+    calcDisplay.style.opacity = "90%"
+    running = true
 }
 
+function ShowDisplay(input) { 
+
+    if ( running===true ) {
+
+    display += input
+    calcDisplay.textContent = display
+ }
+
+}
+
+function ClearDisplay() {
+
+    display = " "
+    calcDisplay.textContent = display
+
+}
+
+function Deletion() { 
+    display -= input 
+    calcDisplay.textContent = display
+}
 
 Admin = { 
 
 }
-
+  
 Arithmetic = { 
 
     Addition : (x,y) => { return (x + y)},

@@ -1,6 +1,5 @@
 * { 
     font-family: "Comic Sans MS", "Comic Sans", "cursive";
-    border: 1px solid red; 
 }
 
 .Calculator.Frame { 
@@ -13,7 +12,7 @@
 }
 
 .Calculator.Display { 
-    background-color: palegreen; position: absolute;
+    background-color: greenyellow; position: absolute; opacity: 25%;
     width: 35vw; height: 10vh; border-radius: 20px; margin-top: 7vh; margin-left: 5vw;
 }
 
