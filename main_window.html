@@ -9,59 +9,42 @@
 </head>
 
 <body>
-
-    <div class= "Calculator Frame"> 
-        <div class = "Calculator Display" id="Calc_Displ"></div>
-        
-        <div id="Buttons_Parent"> 
-
-         <button class="Buttons Blue" id="On_Button" onclick="Turn_On()"> ON </button> 
-         <button class="Buttons Blue"> REPLAY </button> 
             
-            <div class="Buttons Black Parent"> 
-            <button class="Buttons Black" onclick="ShowDisplay(' ^(-1)')">x^(-1)</button>
-            <button class="Buttons Black" onclick="ShowDisplay(' /')">x/y</button>
-            <button class="Buttons Black" onclick="ShowDisplay('Sqrt(')">Sqrt(x)</button>
-            <button class="Buttons Black" onclick="ShowDisplay('^(2)')">x^2</button>
-            <button class="Buttons Black" onclick="ShowDisplay('^(')">x^(?)</button>
-            <button class="Buttons Black" onclick="ShowDisplay('log (')">log</button>
-            <button class="Buttons Black" onclick="ShowDisplay('ln (')">ln</button>
-            <button class="Buttons Black">(-)</button>
-            <button class="Buttons Black" onclick="ShowDisplay('sin (')">sin</button>
-            <button class="Buttons Black" onclick="ShowDisplay('cos (')">cos</button>
-            <button class="Buttons Black" onclick="ShowDisplay('tan (')">tan</button>
-            <button class="Buttons Black" onclick="ShowDisplay('(')">(</button>
-            <button class="Buttons Black"onclick="ShowDisplay(')')">)</button>
+<div class= "Calculator Frame"> 
+<div class = "Calculator Display" id="Calc_Displ"></div>
+
+<div id="Buttons_Parent"> 
+
+<button class="Buttons Blue" id="On_Button" onclick="Calculator.Turn_On()"> ON </button> 
+
+</div>
+        <div class="Buttons White Parent">      
+        <button class="Buttons White Number" onclick="Calculator.Show_Display('0')"> 0 </button>
+        <button class="Buttons White Number" onclick="Calculator.Show_Display('1')"> 1 </button>
+        <button class="Buttons White Number" onclick="Calculator.Show_Display('2')"> 2 </button>
+        <button class="Buttons White Number" onclick="Calculator.Show_Display('3')"> 3 </button>
+        <button class="Buttons White Number" onclick="Calculator.Show_Display('4')"> 4 </button>
+        <button class="Buttons White Number" onclick="Calculator.Show_Display('5')"> 5 </button>
+        <button class="Buttons White Number" onclick="Calculator.Show_Display('6')"> 6 </button>
+        <button class="Buttons White Number" onclick="Calculator.Show_Display('7')"> 7 </button>
+        <button class="Buttons White Number" onclick="Calculator.Show_Display('8')"> 8 </button>
+        <button class="Buttons White Number" onclick="Calculator.Show_Display('9')"> 9 </button>
+        <button class="Buttons White" id="Eq_Button" onclick="Calculator.Evaluate()"> = </button>
+        <button class="Buttons White Operator" onclick="Calculator.Show_Display('+')"> + </button>
+        <button class="Buttons White Operator" onclick="Calculator.Show_Display('-')"> - </button>
+        <button class="Buttons White Operator" onclick="Calculator.Show_Display('X')"> X </button>
+        <button class="Buttons White Operator" onclick="Calculator.Show_Display('÷')"> ÷ </button>
+
+</div>
+
+            <div class="Buttons Orange Parent"> 
+
+            <button class="Buttons Orange"> DEL </button>
+            <button class="Buttons Orange"onclick="Calculator.Clear_Display()"> AC </button>
+
             </div>
-                    <div class="Buttons White Parent">      
-                        <button class="Buttons White" id="Zero"onclick="ShowDisplay('0')"> 0 </button>
-                        <button class="Buttons White" id="One"onclick="ShowDisplay('1')"> 1 </button>
-                        <button class="Buttons White" id="Two"onclick="ShowDisplay('2')"> 2 </button>
-                        <button class="Buttons White" id="Three"onclick="ShowDisplay('3')"> 3 </button>
-                        <button class="Buttons White" id="Four"onclick="ShowDisplay('4')"> 4 </button>
-                        <button class="Buttons White" id="Five"onclick="ShowDisplay('5')"> 5 </button>
-                        <button class="Buttons White" id="Six"onclick="ShowDisplay('6')"> 6 </button>
-                        <button class="Buttons White" id="Seven"onclick="ShowDisplay('7')"> 7 </button>
-                        <button class="Buttons White" id="Eight"onclick="ShowDisplay('8')"> 8 </button>
-                        <button class="Buttons White" id="Nine" onclick="ShowDisplay('9')"> 9 </button>
-                        <button class="Buttons White" onclick="ShowDisplay('.')"> . </button>
-                        <button class="Buttons White"> x10^(x) </button>
-                        <button class="Buttons White" id="Equals_Button"> ANS </button>
-                        <button class="Buttons White"> = </button>
-                        <button class="Buttons White" id="Add_Button" onclick="ShowDisplay('+')"> + </button>
-                        <button class="Buttons White" onclick="ShowDisplay('-')"> - </button>
-                        <button class="Buttons White" onclick="ShowDisplay('X')"> X </button>
-                        <button class="Buttons White" onclick="ShowDisplay('÷')"> ÷ </button>
-                    </div>
-
-                        <div class="Buttons Orange Parent"> 
-
-                        <button class="Buttons Orange" onclick="Deletion()"> DEL </button>
-                        <button class="Buttons Orange"onclick="ClearDisplay()"> AC </button>
-
-                        </div>
-                        </div>
-    </div> 
+            </div>
+</div> 
 
 </body>
 </html>

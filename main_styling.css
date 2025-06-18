@@ -23,14 +23,6 @@
 
 }
 
-.Buttons.Black.Parent {
-    background-color: transparent;    
-}
-
-.Buttons.Black { 
-    background-color: black; color: white; padding: 2.5%; 
-    gap: 1%; border-radius: 25%; 
-}
 
 .Buttons.White.Parent { 
   
