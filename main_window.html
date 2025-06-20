@@ -19,16 +19,16 @@
 
 </div>
         <div class="Buttons White Parent">      
-        <button class="Buttons White Number" onclick="Calculator.Show_Display('0')"> 0 </button>
-        <button class="Buttons White Number" onclick="Calculator.Show_Display('1')"> 1 </button>
-        <button class="Buttons White Number" onclick="Calculator.Show_Display('2')"> 2 </button>
-        <button class="Buttons White Number" onclick="Calculator.Show_Display('3')"> 3 </button>
-        <button class="Buttons White Number" onclick="Calculator.Show_Display('4')"> 4 </button>
-        <button class="Buttons White Number" onclick="Calculator.Show_Display('5')"> 5 </button>
-        <button class="Buttons White Number" onclick="Calculator.Show_Display('6')"> 6 </button>
-        <button class="Buttons White Number" onclick="Calculator.Show_Display('7')"> 7 </button>
-        <button class="Buttons White Number" onclick="Calculator.Show_Display('8')"> 8 </button>
-        <button class="Buttons White Number" onclick="Calculator.Show_Display('9')"> 9 </button>
+<button class="Buttons White Number" onclick="Calculator.operandInputFunc('0'); Calculator.Show_Display('0')"> 0 </button>
+<button class="Buttons White Number" onclick="Calculator.operandInputFunc('1'); Calculator.Show_Display('1')"> 1 </button>
+<button class="Buttons White Number" onclick="Calculator.operandInputFunc('2'); Calculator.Show_Display('2')"> 2 </button>
+<button class="Buttons White Number" onclick="Calculator.operandInputFunc('3'); Calculator.Show_Display('3')"> 3 </button>
+<button class="Buttons White Number" onclick="Calculator.operandInputFunc('4'); Calculator.Show_Display('4')"> 4 </button>
+<button class="Buttons White Number" onclick="Calculator.operandInputFunc('5'); Calculator.Show_Display('5')"> 5 </button>
+<button class="Buttons White Number" onclick="Calculator.operandInputFunc('6'); Calculator.Show_Display('6')"> 6 </button>
+<button class="Buttons White Number" onclick="Calculator.operandInputFunc('7'); Calculator.Show_Display('7')"> 7 </button>
+<button class="Buttons White Number" onclick="Calculator.operandInputFunc('8'); Calculator.Show_Display('8')"> 8 </button>
+<button class="Buttons White Number" onclick="Calculator.operandInputFunc('9'); Calculator.Show_Display('9')"> 9 </button>
         <button class="Buttons White" id="Eq_Button" onclick="Calculator.Evaluate()"> = </button>
         <button class="Buttons White Operator" onclick="Calculator.Show_Display('+')"> + </button>
         <button class="Buttons White Operator" onclick="Calculator.Show_Display('-')"> - </button>
@@ -39,7 +39,7 @@
 
             <div class="Buttons Orange Parent"> 
 
-            <button class="Buttons Orange"> DEL </button>
+            <button class="Buttons Orange" onclick="Calculator.Delete_Display()"> DEL </button>
             <button class="Buttons Orange"onclick="Calculator.Clear_Display()"> AC </button>
 
             </div>
