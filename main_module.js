@@ -21,25 +21,25 @@ const Calculator = {
     calcDisplay.style.opacity = "90%"
     calcDisplay.textContent = this.display },
 
-    Show_Display : function(input){ 
+    Show_Display : function(input) {
 
-        if ( this.running === true ) {
+    if (this.running === true) {
 
-        if (this.op_clicked) {this.display = "", calcDisplay.textContent = this.display } 
-        else { this.display = "", calcDisplay.textContent = this.display }
+        if (input === '+') { this.operator = this.addFunc, this.op_clicked = true }
+         else if (input === '-') { this.operator = this.subFunc, this.op_clicked = true} 
+         else if (input === 'X') { this.operator = this.mulFunc, this.op_clicked = true }
+          else if (input === '÷') { this.operator = this.divFunc, this.op_clicked = true }
 
-        this.display += input
-        calcDisplay.textContent = this.display 
+          if (this.op_clicked && (input === '+' || input === '-' || input === 'X' || input === '÷')) { this.display = input, calcDisplay.textContent = this.display } 
+          else { this.display += input, calcDisplay.textContent = this.display }
 
-        if (this.operator === "") { this.operand_1 += input } else { this.operand_2 += input }
-
-        if (input==='+') { this.operator = this.addFunc, this.op_clicked = true } 
-        else if (input==='-') { this.operator = this.subFunc, this.op_clicked = true }
-        else if (input==='X') { this.operator = this.mulFunc, this.op_clicked = true } 
-        else if (input==='÷') { this.operator = this.divFunc, this.op_clicked = true }
-
+          if (!(input === '+' || input === '-' || input === 'X' || input === '÷')) 
+         { if (this.operator === "") { this.operand_1 += input} 
+          else {  this.operand_2 += input }
         }
-    },
+    }
+},
+
 
     Clear_Display : function(){
 
